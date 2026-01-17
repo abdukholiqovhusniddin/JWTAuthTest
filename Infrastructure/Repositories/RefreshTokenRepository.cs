@@ -1,0 +1,27 @@
+﻿using Application.Interfaces;
+using Domain.Entities;
+using Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
+
+namespace Infrastructure.Repositories;
+public class RefreshTokenRepository(AppDbContext context) : IRefreshTokenRepository
+{
+    private readonly AppDbContext _context = context;
+
+    public async Task AddAsync(RefreshToken refreshToken) =>
+        await _context.RefreshTokens.AddAsync(refreshToken);
+
+    public async Task<RefreshToken?> GetValidTokenAsync(string refreshtocen) =>
+        await _context.RefreshTokens.Include(x => x.User)
+            .FirstOrDefaultAsync(rt => rt.Token == refreshtocen);
+
+    public async Task RevokeAllByUserIdAsync(Guid userId)
+    {
+        var tokens = await _context.RefreshTokens
+            .Where(x => x.UserId == userId)
+            .ToListAsync();
+
+        foreach (var token in tokens)
+            token.IsRevoked = true;
+    }
+}
