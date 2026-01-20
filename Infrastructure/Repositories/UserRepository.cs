@@ -1,5 +1,6 @@
 ﻿using Application.Interfaces;
 using Domain.Entities;
+using Domain.Enums;
 using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
@@ -32,4 +33,11 @@ public class UserRepository(AppDbContext context) : IUserRepository
         _context.Users.Update(user);
         await _context.SaveChangesAsync();
     }
+
+    public async Task<UserRole> GetRoleByIdAsync(Guid refreshUserId) =>
+        (UserRole)(await _context.Users
+            .AsNoTracking()
+            .Where(user => user.Id == refreshUserId)
+            .Select(user => (UserRole?)user.Role)
+            .FirstOrDefaultAsync())!;
 }

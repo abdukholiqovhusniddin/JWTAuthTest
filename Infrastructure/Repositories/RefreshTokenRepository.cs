@@ -12,7 +12,7 @@ public class RefreshTokenRepository(AppDbContext context) : IRefreshTokenReposit
         await _context.RefreshTokens.AddAsync(refreshToken);
 
     public async Task<RefreshToken?> GetValidTokenAsync(string refreshtocen) =>
-        await _context.RefreshTokens.Include(x => x.User)
+        await _context.RefreshTokens
             .FirstOrDefaultAsync(rt => rt.Token == refreshtocen);
 
     public async Task RevokeAllByUserIdAsync(Guid userId)

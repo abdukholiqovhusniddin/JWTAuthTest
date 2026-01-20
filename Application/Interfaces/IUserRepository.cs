@@ -2,6 +2,7 @@
 
 
 using Domain.Entities;
+using Domain.Enums;
 
 namespace Application.Interfaces;
 
@@ -13,4 +14,5 @@ public interface IUserRepository
     Task<User?> GetByEmailAsync(string email);
     Task<User?> GetByIdAsync(Guid id, bool noTracing = false);
     Task UpdateAsync(User user);
+    Task<UserRole> GetRoleByIdAsync(Guid refreshUserId);
 }

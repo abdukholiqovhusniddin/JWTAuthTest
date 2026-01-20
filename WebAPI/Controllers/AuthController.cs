@@ -16,11 +16,13 @@ public class AuthController(IMediator mediator) : BaseApiController
 
     [HttpPost("refresh")]
     [AllowAnonymous]
-    public async Task<IActionResult> Refresh(string refreshtocen )
-        => Ok(await _mediator.Send(new RefreshTokenCommand(refreshtocen, Jti)));
+    public async Task<IActionResult> Refresh([FromBody] string dto)
+    {
+        var accessToken = Request.Headers.Authorization.FirstOrDefault()?.Replace("Bearer ", "") ?? "";
+        return Ok(await _mediator.Send(new RefreshTokenCommand(dto, accessToken)));
+    }
 
     [HttpPost("logout")]
-    [Authorize]
     public async Task<IActionResult> Logout()
         => Ok(await _mediator.Send(new LogoutCommand(UserId, Jti)));
 }

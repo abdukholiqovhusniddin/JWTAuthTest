@@ -16,7 +16,7 @@ public class LogoutCommandHandler(IJwtBlacklistService blacklist, IUnitOfWork un
     {
         await _blacklist.AddAsync(
             request.Jti,
-            TimeSpan.FromMinutes(15) // Assuming access tokens are valid for 15 minutes
+            TimeSpan.FromMinutes(1) // Assuming access tokens are valid for 15 minutes
         );
 
         await _refreshToken.RevokeAllByUserIdAsync(request.UserId);
