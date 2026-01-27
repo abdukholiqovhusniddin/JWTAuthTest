@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git-Hub_pr\\JWTAuth\\Domain\\Domain.csproj": {}
+    "D:\\kerakli faillar\\Git-Hub_pr\\JWTAuth\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "D:\\Git-Hub_pr\\JWTAuth\\Domain\\Domain.csproj": {
+    "D:\\kerakli faillar\\Git-Hub_pr\\JWTAuth\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git-Hub_pr\\JWTAuth\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\kerakli faillar\\Git-Hub_pr\\JWTAuth\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Git-Hub_pr\\JWTAuth\\Domain\\Domain.csproj",
+        "projectPath": "D:\\kerakli faillar\\Git-Hub_pr\\JWTAuth\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Another love\\.nuget\\packages\\",
-        "outputPath": "D:\\Git-Hub_pr\\JWTAuth\\Domain\\obj\\",
+        "outputPath": "D:\\kerakli faillar\\Git-Hub_pr\\JWTAuth\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1364,7 +1364,9 @@
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
           "Domain": "1.0.0",
-          "MediatR": "14.0.0"
+          "MediatR": "14.0.0",
+          "Microsoft.Data.SqlClient": "6.1.1",
+          "Microsoft.EntityFrameworkCore": "10.0.2"
         },
         "compile": {
           "bin/placeholder/Application.dll": {}
@@ -3979,11 +3981,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git-Hub_pr\\JWTAuth\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "D:\\kerakli faillar\\Git-Hub_pr\\JWTAuth\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "D:\\Git-Hub_pr\\JWTAuth\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "D:\\kerakli faillar\\Git-Hub_pr\\JWTAuth\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Another love\\.nuget\\packages\\",
-      "outputPath": "D:\\Git-Hub_pr\\JWTAuth\\Infrastructure\\obj\\",
+      "outputPath": "D:\\kerakli faillar\\Git-Hub_pr\\JWTAuth\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4004,8 +4006,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\Git-Hub_pr\\JWTAuth\\Application\\Application.csproj": {
-              "projectPath": "D:\\Git-Hub_pr\\JWTAuth\\Application\\Application.csproj"
+            "D:\\kerakli faillar\\Git-Hub_pr\\JWTAuth\\Application\\Application.csproj": {
+              "projectPath": "D:\\kerakli faillar\\Git-Hub_pr\\JWTAuth\\Application\\Application.csproj"
             }
           }
         }

@@ -6,7 +6,6 @@ using Infrastructure.Repositories;
 using Infrastructure.Settings;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 using StackExchange.Redis;
 
 namespace Infrastructure;
@@ -26,7 +25,6 @@ public static class DependencyInjection
 
         // Configure JWT authentication and authorization
         services.AddJwtAuthentication(config);
-        services.AddAuthorization();
 
         /*services.AddSingleton<IConnectionMultiplexer>(sp =>
         {

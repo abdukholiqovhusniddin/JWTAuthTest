@@ -4,4 +4,4 @@ using MediatR;
 
 namespace Application.Features.Auth.Commands;
 
-public record RefreshTokenCommand(string Refreshtocen, string AccessToken) : IRequest<ApiResponse<TokenResponseDto>>;
+public record RefreshTokenCommand(string RefreshToken, string AccessToken) : IRequest<ApiResponse<TokenResponseDto>>;

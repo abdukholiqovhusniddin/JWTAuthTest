@@ -10,6 +10,7 @@ public class ApiResponse<T>
     }
     public ApiResponse(string message, int statusCode = 400)
     {
+        Error = message;
         StatusCode = statusCode;
     }
 }

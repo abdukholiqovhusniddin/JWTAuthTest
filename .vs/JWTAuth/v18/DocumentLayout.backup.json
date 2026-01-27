@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\Git-Hub_pr\\JWTAuth\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{52FE8930-4B2C-4FB1-9B5D-B30662902AEF}|WebAPI\\WebAPI.csproj|d:\\git-hub_pr\\jwtauth\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52FE8930-4B2C-4FB1-9B5D-B30662902AEF}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{52FE8930-4B2C-4FB1-9B5D-B30662902AEF}|WebAPI\\WebAPI.csproj|d:\\git-hub_pr\\jwtauth\\webapi\\middlewares\\jwtblacklistmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52FE8930-4B2C-4FB1-9B5D-B30662902AEF}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\middlewares\\jwtblacklistmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -57,6 +53,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{8ACCF18F-C988-48ED-A6F7-40C5C4BB3E90}|Domain\\Domain.csproj|d:\\git-hub_pr\\jwtauth\\domain\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8ACCF18F-C988-48ED-A6F7-40C5C4BB3E90}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52FE8930-4B2C-4FB1-9B5D-B30662902AEF}|WebAPI\\WebAPI.csproj|d:\\git-hub_pr\\jwtauth\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52FE8930-4B2C-4FB1-9B5D-B30662902AEF}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,11 +66,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "JwtBlacklistService.cs",
+              "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\Infrastructure\\Redis\\JwtBlacklistService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Redis\\JwtBlacklistService.cs",
+              "ToolTip": "D:\\Git-Hub_pr\\JWTAuth\\Infrastructure\\Redis\\JwtBlacklistService.cs",
+              "RelativeToolTip": "Infrastructure\\Redis\\JwtBlacklistService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-17T11:04:19.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JwtTokenService.cs",
+              "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\Infrastructure\\JwtAuth\\JwtTokenService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\JwtAuth\\JwtTokenService.cs",
+              "ToolTip": "D:\\Git-Hub_pr\\JWTAuth\\Infrastructure\\JwtAuth\\JwtTokenService.cs",
+              "RelativeToolTip": "Infrastructure\\JwtAuth\\JwtTokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-17T11:03:45.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\User.cs",
@@ -78,11 +104,12 @@
               "RelativeToolTip": "Domain\\Entities\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T11:02:16.48Z"
+              "WhenOpened": "2026-01-17T11:02:16.48Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "RefreshToken.cs",
               "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\Domain\\Entities\\RefreshToken.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\RefreshToken.cs",
@@ -90,11 +117,12 @@
               "RelativeToolTip": "Domain\\Entities\\RefreshToken.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T11:02:12.094Z"
+              "WhenOpened": "2026-01-17T11:02:12.094Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "RefreshTokenRepository.cs",
               "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\Infrastructure\\Repositories\\RefreshTokenRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\RefreshTokenRepository.cs",
@@ -102,11 +130,38 @@
               "RelativeToolTip": "Infrastructure\\Repositories\\RefreshTokenRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T10:53:24.919Z"
+              "WhenOpened": "2026-01-17T10:53:24.919Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RefreshTokenCommandHandler.cs",
+              "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\Application\\Features\\Auth\\Handlers\\RefreshTokenCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Auth\\Handlers\\RefreshTokenCommandHandler.cs",
+              "ToolTip": "D:\\Git-Hub_pr\\JWTAuth\\Application\\Features\\Auth\\Handlers\\RefreshTokenCommandHandler.cs",
+              "RelativeToolTip": "Application\\Features\\Auth\\Handlers\\RefreshTokenCommandHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-17T10:41:17.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseApiController.cs",
+              "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\WebAPI\\Controllers\\BaseApiController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\BaseApiController.cs",
+              "ToolTip": "D:\\Git-Hub_pr\\JWTAuth\\WebAPI\\Controllers\\BaseApiController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\BaseApiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-17T10:39:01.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "JwtBlacklistMiddleware.cs",
               "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\WebAPI\\Middlewares\\JwtBlacklistMiddleware.cs",
               "RelativeDocumentMoniker": "WebAPI\\Middlewares\\JwtBlacklistMiddleware.cs",
@@ -119,68 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
-              "ToolTip": "D:\\Git-Hub_pr\\JWTAuth\\WebAPI\\Program.cs",
-              "RelativeToolTip": "WebAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T10:26:28.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "JwtTokenService.cs",
-              "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\Infrastructure\\JwtAuth\\JwtTokenService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\JwtAuth\\JwtTokenService.cs",
-              "ToolTip": "D:\\Git-Hub_pr\\JWTAuth\\Infrastructure\\JwtAuth\\JwtTokenService.cs",
-              "RelativeToolTip": "Infrastructure\\JwtAuth\\JwtTokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T11:03:45.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "JwtBlacklistService.cs",
-              "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\Infrastructure\\Redis\\JwtBlacklistService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Redis\\JwtBlacklistService.cs",
-              "ToolTip": "D:\\Git-Hub_pr\\JWTAuth\\Infrastructure\\Redis\\JwtBlacklistService.cs",
-              "RelativeToolTip": "Infrastructure\\Redis\\JwtBlacklistService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T11:04:19.118Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RefreshTokenCommandHandler.cs",
-              "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\Application\\Features\\Auth\\Handlers\\RefreshTokenCommandHandler.cs",
-              "RelativeDocumentMoniker": "Application\\Features\\Auth\\Handlers\\RefreshTokenCommandHandler.cs",
-              "ToolTip": "D:\\Git-Hub_pr\\JWTAuth\\Application\\Features\\Auth\\Handlers\\RefreshTokenCommandHandler.cs",
-              "RelativeToolTip": "Application\\Features\\Auth\\Handlers\\RefreshTokenCommandHandler.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T10:41:17.834Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BaseApiController.cs",
-              "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\WebAPI\\Controllers\\BaseApiController.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Controllers\\BaseApiController.cs",
-              "ToolTip": "D:\\Git-Hub_pr\\JWTAuth\\WebAPI\\Controllers\\BaseApiController.cs",
-              "RelativeToolTip": "WebAPI\\Controllers\\BaseApiController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T10:39:01.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "ExceptionHandlingMiddleware.cs",
               "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\WebAPI\\Middlewares\\ExceptionHandlingMiddleware.cs",
               "RelativeDocumentMoniker": "WebAPI\\Middlewares\\ExceptionHandlingMiddleware.cs",
@@ -188,11 +182,12 @@
               "RelativeToolTip": "WebAPI\\Middlewares\\ExceptionHandlingMiddleware.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T10:38:48.076Z"
+              "WhenOpened": "2026-01-17T10:38:48.076Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\Infrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Infrastructure\\DependencyInjection.cs",
@@ -200,11 +195,12 @@
               "RelativeToolTip": "Infrastructure\\DependencyInjection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T10:38:38.5Z"
+              "WhenOpened": "2026-01-17T10:38:38.5Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\WebAPI\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\UsersController.cs",
@@ -212,11 +208,12 @@
               "RelativeToolTip": "WebAPI\\Controllers\\UsersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T10:35:56.923Z"
+              "WhenOpened": "2026-01-17T10:35:56.923Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "UserRole.cs",
               "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\Domain\\Enums\\UserRole.cs",
               "RelativeDocumentMoniker": "Domain\\Enums\\UserRole.cs",
@@ -224,11 +221,12 @@
               "RelativeToolTip": "Domain\\Enums\\UserRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T10:36:36.472Z"
+              "WhenOpened": "2026-01-17T10:36:36.472Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\WebAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\AuthController.cs",
@@ -236,7 +234,21 @@
               "RelativeToolTip": "WebAPI\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T10:35:59.737Z"
+              "WhenOpened": "2026-01-17T10:35:59.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Git-Hub_pr\\JWTAuth\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
+              "ToolTip": "D:\\Git-Hub_pr\\JWTAuth\\WebAPI\\Program.cs",
+              "RelativeToolTip": "WebAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-17T10:26:28.497Z",
+              "EditorCaption": ""
             }
           ]
         }

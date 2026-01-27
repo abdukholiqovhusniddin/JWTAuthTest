@@ -347,3 +347,5 @@ D:\Git-Hub_pr\JWTAuth\WebAPI\obj\Debug\net10.0\refint\WebAPI.dll
 D:\Git-Hub_pr\JWTAuth\WebAPI\obj\Debug\net10.0\WebAPI.pdb
 D:\Git-Hub_pr\JWTAuth\WebAPI\obj\Debug\net10.0\WebAPI.genruntimeconfig.cache
 D:\Git-Hub_pr\JWTAuth\WebAPI\obj\Debug\net10.0\ref\WebAPI.dll
+D:\Git-Hub_pr\JWTAuth\WebAPI\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll
+D:\Git-Hub_pr\JWTAuth\WebAPI\bin\Debug\net10.0\HealthChecks.Redis.dll

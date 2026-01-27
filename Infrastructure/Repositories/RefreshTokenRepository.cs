@@ -15,11 +15,11 @@ public class RefreshTokenRepository(AppDbContext context) : IRefreshTokenReposit
         await _context.RefreshTokens
             .FirstOrDefaultAsync(rt => rt.Token == refreshtocen);
 
-    public async Task RevokeAllByUserIdAsync(Guid userId)
+    public async Task RevokeAllByUserIdAsync(Guid userId,  CancellationToken cancellationToken = default)
     {
         var tokens = await _context.RefreshTokens
             .Where(x => x.UserId == userId)
-            .ToListAsync();
+            .ToListAsync(cancellationToken);
 
         foreach (var token in tokens)
             token.IsRevoked = true;

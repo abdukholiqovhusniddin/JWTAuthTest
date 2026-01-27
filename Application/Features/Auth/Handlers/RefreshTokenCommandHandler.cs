@@ -21,46 +21,44 @@ public class RefreshTokenCommandHandler(IRefreshTokenRepository refreshToken, IU
 
     public async Task<ApiResponse<TokenResponseDto>> Handle(RefreshTokenCommand request, CancellationToken cancellationToken)
     {
-        var refresh = await _refreshTokenRepository.GetValidTokenAsync(request.Refreshtocen)
+        if (string.IsNullOrWhiteSpace(request.AccessToken))
+            throw new ApiException("Access token is required to refresh (to read claims).");
+        if (string.IsNullOrWhiteSpace(request.RefreshToken))
+            throw new ApiException("Refresh token is required");
+        
+        var refresh = await _refreshTokenRepository.GetValidTokenAsync(request.RefreshToken)
                       ?? throw new ApiException("Invalid refresh token or Refresh token revoked");
-    
         if (refresh.ExpiresAt <= DateTime.UtcNow)
             throw new ApiException("Refresh token has expired");
     
-        if (string.IsNullOrWhiteSpace(request.AccessToken))
-            throw new ApiException("Access token is required to refresh (to read claims).");
-    
         var principal = _jwtService.GetPrincipalFromExpiredToken(request.AccessToken);
-    
-        var userIdClaim = principal.FindFirst(JwtRegisteredClaimNames.Sub)?.Value; // -------
-    
-        /*if (string.IsNullOrWhiteSpace(userIdClaim) || !Guid.TryParse(userIdClaim, out var tokenUserId))
+        var userIdClaim =
+            principal.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value
+            ?? principal.FindFirst(JwtRegisteredClaimNames.Sub)?.Value
+            ?? principal.FindFirst("sub")?.Value; 
+
+        if (string.IsNullOrWhiteSpace(userIdClaim) || !Guid.TryParse(userIdClaim, out var tokenUserId))
             throw new ApiException("Invalid user ID in access token");
 
         if (tokenUserId != refresh.UserId)
-            throw new ApiException("Access token user does not match refresh token user.");*/
+            throw new ApiException("Access token user does not match refresh token user.");
     
-        var jti = principal.FindFirst(JwtRegisteredClaimNames.Jti)?.Value; ////   ----
-    
-    
+        var jti = principal.FindFirst(JwtRegisteredClaimNames.Jti)?.Value;
         if (!string.IsNullOrWhiteSpace(jti))
-            await _blacklist.AddAsync(jti, TimeSpan.FromMinutes(1)); 
-        else 
+            await _blacklist.AddAsync(jti, TimeSpan.FromMinutes(15)); 
+        else
             throw new ApiException("Access token does not match refresh token.");
     
         var role = await _userRepository.GetRoleByIdAsync(refresh.UserId);
     
         refresh.IsRevoked = true;
-    
         var newRefresh = new RefreshToken
         {
             Token = _jwtService.GenerateRefreshToken(),
             ExpiresAt = DateTime.UtcNow.AddDays(7),
             UserId = refresh.UserId
         };
-    
         await _refreshTokenRepository.AddAsync(newRefresh);
-    
         var newAccess = _jwtService.GenerateAccessToken(refresh.UserId, role);
         await _unitOfWork.SaveChangesAsync(cancellationToken);
     

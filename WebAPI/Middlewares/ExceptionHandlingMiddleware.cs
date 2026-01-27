@@ -41,6 +41,13 @@ public class ExceptionHandlingMiddleware(RequestDelegate next, ILogger<Exception
                     Errors = validationException
                 },
                 StatusCodes.Status400BadRequest),
+            // ✅ MANA SHU JOYGA QO‘SHASAN
+            ServiceUnavailableException => (
+                new
+                {
+                    exception.Message
+                },
+                StatusCodes.Status503ServiceUnavailable),
             NotFoundException => (
                 new
                 {
