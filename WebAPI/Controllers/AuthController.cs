@@ -11,8 +11,11 @@ public class AuthController(IMediator mediator) : BaseApiController
 
     [HttpPost("login")]
     [AllowAnonymous]
-    public async Task<IActionResult> Login(LoginCommand command) 
-        => Ok(await _mediator.Send(command));
+    public async Task<IActionResult> Login(LoginCommand command)
+    {
+        var res = await _mediator.Send(command);
+        return FromApiResponse(res);
+    }
 
     [HttpPost("refresh")]
     [AllowAnonymous]
